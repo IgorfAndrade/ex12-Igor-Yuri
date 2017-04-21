@@ -8,10 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
-import ProdutoDTO;
-
 public class ProdutoDAO {
 	public List<ProdutoDTO> getProdutos(){
         Connection con;
@@ -38,7 +34,7 @@ public class ProdutoDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return produtos;     
+		return produtos;
 	}
 
 	

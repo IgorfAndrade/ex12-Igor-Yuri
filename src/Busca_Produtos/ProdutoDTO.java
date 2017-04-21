@@ -43,6 +43,12 @@ public class ProdutoDTO {
 	public String getLocal() {
 		return local;
 	}
+
+	@Override
+	public String toString() {
+		return "ProdutoDTO [id=" + id + ", nome=" + nome + ", dataInclusao=" + dataInclusao + ", categoria=" + categoria
+				+ ", local=" + local + ", preco=" + preco + "]";
+	}
 	
 	
 }

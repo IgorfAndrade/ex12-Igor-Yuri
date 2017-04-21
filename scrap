@@ -1,0 +1,5 @@
+insert into PRODUTOS (CODIGO, NOME, DATA_INCLUSAO, LOCALI, CATEGORIA, VALOR) values(1,'pneu','14/12/12','Nova Santa Rita','Peças e acessorios',100.00);
+insert into PRODUTOS (CODIGO, NOME, DATA_INCLUSAO, LOCALI, CATEGORIA, VALOR) values(2,'pneu','14/12/12','Nova Santa Rita','Peças e acessorios',100.00);
+insert into PRODUTOS (CODIGO, NOME, DATA_INCLUSAO, LOCALI, CATEGORIA, VALOR) values(3,'pneu','14/12/12','Nova Santa Rita','Peças e acessorios',100.00);
+insert into PRODUTOS (CODIGO, NOME, DATA_INCLUSAO, LOCALI, CATEGORIA, VALOR) values(4,'pneu','14/12/12','Nova Santa Rita','Peças e acessorios',100.00);
+insert into PRODUTOS (CODIGO, NOME, DATA_INCLUSAO, LOCALI, CATEGORIA, VALOR) values(5,'pneu','14/12/12','Nova Santa Rita','Peças e acessorios',100.00);
