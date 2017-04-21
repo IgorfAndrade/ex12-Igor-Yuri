@@ -1,18 +1,22 @@
 package Busca_Produtos;
 
 public class ProdutoDTO {
-
-	private String nome;
-	private String categoria;
-	private double preco;
-	private String dataInclusao;
 	private int id;
+	private String nome;
+	private String dataInclusao;	
+	private String categoria;
+	private String local;
+	private double preco;
+
+
 	
-	public ProdutoDTO(String n, String c, double p, String dt, int i){
+	
+	public ProdutoDTO(int i, String n, String dt, String c, String l, double p ){
 		nome = n;
 		categoria = c;
 		preco = p;
 		dataInclusao = dt;
+		local = l;
 		id = i;
 	}
 
@@ -34,6 +38,10 @@ public class ProdutoDTO {
 
 	public int getId() {
 		return id;
+	}
+	
+	public String getLocal() {
+		return local;
 	}
 	
 	

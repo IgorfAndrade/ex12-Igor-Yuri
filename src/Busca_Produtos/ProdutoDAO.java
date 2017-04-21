@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -14,31 +15,31 @@ import ProdutoDTO;
 public class ProdutoDAO {
 	public List<ProdutoDTO> getProdutos(){
         Connection con;
+		List<ProdutoDTO> produtos = new ArrayList<ProdutoDTO>();
 		try {
 			con = DriverManager.getConnection("jdbc:derby:C:\\Users\\11204307\\produto");
 			Statement sta = con.createStatement();
 	        String sql = "select * from produtos";
 			PreparedStatement comando = con.prepareStatement(sql);
 			ResultSet resultado = comando.executeQuery();
-			while(!resultado.next()){
+
+			while(resultado.next())
+			{
+				int i 		= resultado.getInt(1);
+             	String n	= resultado.getString(2);
+				String d 	= resultado.getString(3);
+				String l 	= resultado.getString(4);
+				String c 	= resultado.getString(5);
+				double p 	= resultado.getInt(6);
 				
-			ProdutoDTO aux = new ProdutoDTO(n, c, p, dt, i)	
-				
+			ProdutoDTO aux = new ProdutoDTO(i, n, d, l, c,p);	
+			produtos.add(aux);	
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-        
-        //TODO testar o resultado
-
-
-        
-   return resultado;     
+		return produtos;     
 	}
-	
-	public void insertProduto(){
-		//TODO
-		
-	}
+
 	
 }
