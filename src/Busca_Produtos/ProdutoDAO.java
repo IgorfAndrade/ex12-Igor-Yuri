@@ -11,7 +11,7 @@ import java.util.List;
 public class ProdutoDAO {
 	public List<ProdutoDTO> getProdutos(){
         Connection con;
-		List<ProdutoDTO> produtos = new ArrayList<ProdutoDTO>();
+		ArrayList<ProdutoDTO> produtos = new ArrayList<ProdutoDTO>();
 		try {
 			con = DriverManager.getConnection("jdbc:derby:C:\\Users\\11204307\\produto");
 			Statement sta = con.createStatement();
@@ -26,7 +26,7 @@ public class ProdutoDAO {
 				String d 	= resultado.getString(3);
 				String l 	= resultado.getString(4);
 				String c 	= resultado.getString(5);
-				double p 	= resultado.getInt(6);
+				double p 	= resultado.getDouble(6);
 				
 			ProdutoDTO aux = new ProdutoDTO(i, n, d, l, c,p);	
 			produtos.add(aux);	

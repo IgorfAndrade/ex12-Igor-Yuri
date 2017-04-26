@@ -8,9 +8,9 @@ public class Main {
 	ProdutoDAO prod = new ProdutoDAO();
         ArrayList<ProdutoDTO> prodCad = (ArrayList<ProdutoDTO>) prod.getProdutos();
 		
-		for (int i = 1; i<= prodCad.size(); i++){
+		for (int i = 0; i< prodCad.size(); i++){
 			
-			System.out.print(prodCad.get(i).toString());
+			System.out.println(prodCad.get(i).toString());
 		}
 	}
 

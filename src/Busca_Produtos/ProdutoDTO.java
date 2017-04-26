@@ -6,12 +6,12 @@ public class ProdutoDTO {
 	private String dataInclusao;	
 	private String categoria;
 	private String local;
-	private double preco;
+	private Double preco;
 
 
 	
 	
-	public ProdutoDTO(int i, String n, String dt, String c, String l, double p ){
+	public ProdutoDTO(int i, String n, String dt, String c, String l, Double p ){
 		nome = n;
 		categoria = c;
 		preco = p;
@@ -28,7 +28,7 @@ public class ProdutoDTO {
 		return categoria;
 	}
 
-	public double getPreco() {
+	public Double getPreco() {
 		return preco;
 	}
 
