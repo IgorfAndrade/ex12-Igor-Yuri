@@ -1,1 +1,8 @@
-
+language: objective-c  # Do tests on OS X
+env:
+  global:
+    - SKIP_IMAGE_CHECK=1
+before_install:
+  - brew update
+  - brew cask install java
+script: mvn test
