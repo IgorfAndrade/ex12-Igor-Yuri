@@ -8,7 +8,8 @@ public class Main {
 	ProdutoDAO prod = new ProdutoDAO();
         ArrayList<ProdutoDTO> prodCad = (ArrayList<ProdutoDTO>) prod.getProdutos();
 		
-		for (ProdutoDTO c : prodCad){
+        //test
+		for (ProdutoDTO c : prodCad) {
 			
 			System.out.println(c.toString());
 		}
