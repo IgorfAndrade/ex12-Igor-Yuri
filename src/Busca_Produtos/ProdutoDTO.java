@@ -8,9 +8,14 @@ public class ProdutoDTO {
 	private String local;
 	private Double preco;
 
-
 	
-	
+	/*@ requires i != null && i >= 1;
+	  @ requires n != null && n != (""); 
+	  @ requires dt != null && dt != (""); 
+	  @ requires c != null && c != (""); 
+	  @ requires l != null && l != (""); 
+	  @ requires p != null && p >= 0.01;
+	 */ 	
 	public ProdutoDTO(int i, String n, String dt, String c, String l, Double p ){
 		nome = n;
 		categoria = c;
